@@ -6,7 +6,9 @@
         "speaksFlag": "https://flagcdn.com/20x15/us.png",
         "practicesFlag": "https://flagcdn.com/20x15/jp.png",
         "level": "+3",
-        "bio": "Hi, I'm Sabina! I'm passionate about languages and especially interested in Japanese culture.  Let's chat about frogs and Japanese writing!"
+        "bio": "Hi, I'm Sabina! I'm passionate about languages and especially interested in Japanese culture.  Let's chat about frogs and Japanese writing!",
+        "gender": "female",  
+        "age": 24         
     },
     {
         "name": "Lukas, 23",
@@ -15,7 +17,9 @@
         "speaksFlag": "https://flagcdn.com/20x15/us.png",
         "practicesFlag": "https://flagcdn.com/20x15/fr.png",
         "newProfile": true,
-        "bio": "Hey there, I'm Lukas. Stones are fascinating! I love geology and exploring nature.  Planning a trip to France soon to see some cool rocks.  Anyone want to teach me French?" 
+        "bio": "Hey there, I'm Lukas. Stones are fascinating! I love geology and exploring nature.  Planning a trip to France soon to see some cool rocks.  Anyone want to teach me French?" ,
+        "gender": "male",   
+        "age": 23          
     }
 
 ]

@@ -11,22 +11,47 @@
 
     <header>
         <div class="top-bar">
+            <!-- REMOVE TOP LEFT ICON -->
             <div class="top-bar-left">
-                <i class="fas fa-user-plus"></i>
+                <!--  REMOVED: <i class="fas fa-user-plus"></i> -->
             </div>
-      
+
             <div class="top-bar-center">
                 <img src="https://cdn-icons-png.flaticon.com/512/14733/14733787.png" alt="Neurodiversity Icon" class="neurodiversity-icon">
             </div>
-            
-                
+
+            <!-- BIGGER, CLICKABLE PROFILE PIC - LINK TO PERSONAL PROFILE PAGE -->
             <div class="top-bar-right">
-                <img src="https://randomuser.me/api/portraits/thumb/men/75.jpg" alt="Profile" class="profile-thumb">
+                <a href="personal-profile.html"> <img src="https://randomuser.me/api/portraits/thumb/men/75.jpg" alt="Your Profile" class="profile-thumb top-profile-thumb"> </a>
             </div>
         </div>
         <div class="search-bar">
             <i class="fas fa-search"></i>
             <input type="text" placeholder="Find members by name, by topics">
+            <!-- FILTER ICON ADDED HERE -->
+            <button class="filter-button" id="filter-button"> <i class="fas fa-filter"></i> </button>
+        </div>
+        <!-- FILTER OPTIONS (HIDDEN BY DEFAULT) -->
+        <div class="filter-options" id="filter-options" style="display: none;">
+            <div class="filter-group">
+                <label for="gender-filter">Gender:</label>
+                <select id="gender-filter">
+                    <option value="">All</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="age-filter">Age Range:</label>
+                <select id="age-filter">
+                    <option value="">All</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="35+">35+</option>
+                </select>
+            </div>
+            <button id="apply-filters-button">Apply Filters</button>
         </div>
     </header>
 
@@ -42,11 +67,10 @@
                 <a href="chats.html" class="nav-link"> <i class="fas fa-comment-dots"></i> <span>Chats</span> </a>
             </div>
         </nav>
-        
+
     </footer>
 
-      
+    <script src="dynamicProfiles.js"></script>
+    <script src="search_bar.js"></script> 
 </body>
-<script src="dynamicProfiles.js"></script>  <!-- Link to dynamicProfiles.js (load first) -->
-<script src="search_bar.js"></script>         <!-- Link to script.js -->
 </html>
