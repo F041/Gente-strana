@@ -1,0 +1,310 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333;
+}
+
+/* Top Bar */
+header {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.neurodiversity-icon {
+    height: 50px; /* Adjust size as needed */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* To ensure proper vertical alignment */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.top-bar-left, .top-bar-right {
+    font-size: 1.2em;
+    color: #555;
+}
+.top-bar-center {
+    color: #9c27b0; /* Purple color like chat bubble */
+    font-size: 1.8em;
+}
+
+.profile-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.search-bar i {
+    color: #777;
+    margin-right: 8px;
+}
+
+.search-bar input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1em;
+    outline: none; /* Remove focus outline */
+}
+
+
+/* Content and Profile Cards */
+.content {
+    padding: 10px;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.profile-card.new-profile {
+    border-top: 4px solid #2ecc71; /* Green for "NEW" profiles */
+}
+.profile-card.popular-profile {
+    border-top: 4px solid #f39c12; /* Orange/Yellow for "Popular" profiles */
+}
+
+
+.profile-image {
+    position: relative; /* For badges positioning */
+    margin-right: 15px;
+}
+
+.profile-pic {
+    width: 140px; /* Increased size */
+    height: 140px; /* Increased size */
+    border-radius: 20%; /* less:it becoems a square, more, it becomes a circle */
+    object-fit: cover;
+}
+
+
+
+
+.online-indicator {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #2ecc71; /* Green for online */
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.new-badge, .popular-badge {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    background-color: #2ecc71; /* Green for NEW badge */
+    color: white;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 0.8em;
+}
+.popular-badge {
+    background-color: #f39c12; /* Orange/Yellow for Popular badge */
+}
+
+
+.profile-details {
+    flex: 1; /* Take remaining space */
+}
+
+.profile-header {
+    margin-bottom: 8px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.description {
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.languages {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.languages span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.languages img {
+    width: 20px;
+    height: 15px;
+    object-fit: contain; /* Keep aspect ratio */
+    border: 1px solid #ddd; /* Optional border for flags */
+}
+.level {
+    background-color: #ddd;
+    color: #555;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+
+/* Bottom Navigation */
+footer {
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.05);
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #777;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: #9c27b0; /* Purple for active item */
+}
+
+.nav-item i {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+
+/* Responsive adjustments (Optional, but good practice) */
+@media (max-width: 600px) {
+    .top-bar-center {
+        font-size: 1.5em; /* Slightly smaller on smaller screens */
+    }
+    .search-bar input {
+        font-size: 0.95em;
+    }
+    .profile-card {
+        padding: 10px;
+        flex-direction: column; /* Stack image and details on smaller screens if needed */
+        align-items: center;
+        text-align: center; /* Center text on smaller screens */
+    }
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .languages {
+        justify-content: center; /* Center language flags on smaller screens */
+    }
+}
+
+
+/* --- New CSS for Profile Page and Profile Card Links --- */
+
+/* Remove default link styling from profile cards */
+.profile-card-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    display: block; /* Make the link fill the entire card area */
+}
+
+.profile-page-content {
+    padding: 20px;
+}
+
+.profile-header-section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.profile-page-pic {
+    width: 120px; /* Larger profile pic on profile page */
+    height: 120px;
+}
+
+.profile-header-details {
+    margin-left: 20px;
+}
+
+.profile-page-name {
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.profile-page-description {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.profile-bio-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.profile-bio-section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.profile-bio-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.profile-actions-section {
+    text-align: center; /* Center the button */
+}
+
+.message-button {
+    background-color: #9c27b0; /* Purple button color */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.message-button:hover {
+    background-color: #7b1fa2; /* Darker purple on hover */
+}

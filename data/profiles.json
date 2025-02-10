@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Sabina, 24",
+        "description": "Who wants to learn how frog talks?",
+        "profilePic": "https://randomuser.me/api/portraits/women/1.jpg",
+        "speaksFlag": "https://flagcdn.com/20x15/us.png",
+        "practicesFlag": "https://flagcdn.com/20x15/jp.png",
+        "level": "+3",
+        "bio": "Hi, I'm Sabina! I'm passionate about languages and especially interested in Japanese culture.  Let's chat about frogs and Japanese writing!" // Added bio
+    },
+    {
+        "name": "Lukas, 23",
+        "description": "I'm going to discover stones",
+        "profilePic": "https://randomuser.me/api/portraits/men/2.jpg",
+        "speaksFlag": "https://flagcdn.com/20x15/us.png",
+        "practicesFlag": "https://flagcdn.com/20x15/fr.png",
+        "newProfile": true,
+        "bio": "Hey there, I'm Lukas. Stones are fascinating! I love geology and exploring nature.  Planning a trip to France soon to see some cool rocks.  Anyone want to teach me French?" // Added bio
+    }
+    // ... more profiles with bios ...
+]
