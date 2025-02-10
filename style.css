@@ -48,6 +48,7 @@ header {
     background-color: #eee;
     border-radius: 8px;
     padding: 8px 12px;
+    position: relative; /* ADD THIS LINE - Make .search-bar the positioning context */
 }
 
 .search-bar i {
@@ -334,12 +335,12 @@ footer {
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    position: absolute; /* Position below the search bar */
-    top: calc(100% + 5px); /* Position just below search bar */
-    right: 0; /* Align to the right of search bar */
-    z-index: 10; /* Ensure it's on top of other content */
-    width: 250px; /* Adjust width as needed */
-}
+    position: absolute; /* Position below the search bar /
+    top: calc(100% + 5px); / Position just below search bar /
+    right: 0; / Align to the right of search bar /
+    z-index: 10; / Ensure it's on top of other content /
+    width: 250px; / Adjust width as needed */
+    }
 
 .filter-group {
     margin-bottom: 10px;
