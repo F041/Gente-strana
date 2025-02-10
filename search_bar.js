@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const genderFilterSelect = document.getElementById('gender-filter');
     const ageFilterSelect = document.getElementById('age-filter');
     let isFilterOptionsVisible = false; // Track filter options visibility
+    filterButton.addEventListener('click', () => {
+        console.log("Filter button CLICKED!"); // ADD THIS DEBUGGING LOG
+        isFilterOptionsVisible = !isFilterOptionsVisible;
+        filterOptionsDiv.style.display = isFilterOptionsVisible ? 'block' : 'none';
+    });
 
     // Toggle filter options visibility when filter button is clicked
     filterButton.addEventListener('click', () => {
